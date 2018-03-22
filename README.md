@@ -23,8 +23,6 @@ Copyright (c) 2018, the {{cookiecutter.repo_name}} contributors on GitHub, https
 All rights reserved.
 ```
 
-* By default, you get a python `setup` script that works for DM Stack projects. For Level 3 projects that do not depend on the stack, you'll want to bring in your own `setup.py`.
-
 
 ### Feedback, License etc
 
