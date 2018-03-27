@@ -8,7 +8,7 @@ Goals
 Installation
 ------------
 
-Requires python3, pipette, DESCFormats, and ...
+Requires python3, ceci, DESCFormats, and ...
 
 Add this directory to your PYTHONPATH variable to use it in other pipelines.
 
@@ -27,7 +27,7 @@ Running the pipeline
 You can run:
 
 ```bash
-pipette test/test.yml
+ceci test/test.yml
 ```
 to run the implemented stages
 
