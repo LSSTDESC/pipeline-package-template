@@ -14,15 +14,14 @@ class {{cookiecutter.repo_name}}Stage1(PipelineStage):
         # More inputs can go here
     ]
     required_config = {
-        'price_of_fish': None,
-        'number_of_roads': 42,
+        'price_of_fish': float,  # This parameter is required
+        'number_of_roads': 42,   # This parameter will take the default value 42 if not specified
         }
 
     def run(self):
-        config = self.read_config()
 
-        fish = config['price_of_fish']
-        roads = config['number_of_roads']
+        fish = self.config['price_of_fish']
+        roads = self.config['number_of_roads']
 
         input_file = self.open_input('some_input_tag')
         input_data = input_file.read()

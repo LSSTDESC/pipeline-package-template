@@ -9,12 +9,11 @@ output_dir: ./outputs
 
 inputs:
     some_input_tag: test/input_data.txt
-    config: test/config.yml
 
 resume: False
 log_dir: ./test/logs
 pipeline_log: ./test/log.txt
-
+config: test/config.yml
 
 
 launcher:
