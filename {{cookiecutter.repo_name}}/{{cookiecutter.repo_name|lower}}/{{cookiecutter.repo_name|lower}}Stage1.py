@@ -6,15 +6,14 @@ class {{cookiecutter.repo_name}}Stage1(PipelineStage):
     name = "{{cookiecutter.repo_name}}Stage1"
     #
     inputs = [
-        ('config', YamlFile),
         ('some_input_tag', TextFile),
     ]
     outputs = [
         ('some_output_tag', TextFile),
         # More inputs can go here
     ]
-    required_config = {
-        'price_of_fish': float,  # This parameter is required
+    config_options = {
+        'price_of_fish': float,  # This parameter is required in the test/config.yaml file
         'number_of_roads': 42,   # This parameter will take the default value 42 if not specified
         }
 

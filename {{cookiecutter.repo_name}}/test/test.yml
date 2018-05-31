@@ -16,13 +16,4 @@ pipeline_log: ./test/log.txt
 config: test/config.yml
 
 
-launcher:
-    globals: {lazyErrors: true}
-    sites:
-    - auth: {channel: null}
-      execution: {
-        executor: threads, 
-        maxThreads: 4, 
-        provider: null
-    }
-      site: Local_Threads
+launcher: local
